@@ -29,15 +29,15 @@ public class RestauranteEntity {
     private Integer capacidadeRefeicoes;
 
     @NotNull
-    @Size(min = 5, max = 5, message = "O horário deve ser no formato 00:00 (24h)")
+    @Size(min = 8, max = 8, message = "O horário deve ser no formato 00:00:00 (24h)")
     private String horarioCafeManha;
 
     @NotNull
-    @Size(min = 5, max = 5, message = "O horário deve ser no formato 00:00 (24h)")
+    @Size(min = 8, max = 8, message = "O horário deve ser no formato 00:00:00 (24h)")
     private String horarioAlmoco;
 
     @NotNull
-    @Size(min = 5, max = 5, message = "O horário deve ser no formato 00:00 (24h)")
+    @Size(min = 8, max = 8, message = "O horário deve ser no formato 00:00:00 (24h)")
     private String horarioJantar;
 
     @NotNull
