@@ -14,14 +14,14 @@ public class EnderecoEntity {
     private Integer id;
 
     @NotNull
-    @Size(min = 30, max = 255, message = "O tamanho do nome da rua deve ser entre {min} e {max}")
+    @Size(min = 10, max = 255, message = "O tamanho do nome da rua deve ser entre {min} e {max}")
     private String rua;
 
     @NotNull
     private Integer numero;
 
     @NotNull
-    @Size(min = 14, max = 14, message = "O tamanho do CEP deve ser 14 caraceteres (8 algarismos separados por um -)")
+    @Size(min = 8, max = 14, message = "O tamanho do CEP deve ser 14 caraceteres (8 algarismos separados por um -)")
     private String cep;
 
     @NotNull
@@ -33,6 +33,6 @@ public class EnderecoEntity {
     private String estado;
 
     @NotNull
-    @Size(min = 5, max = 50, message = "O tamanho do nome do país deve ser entre {min} e {max}")
+    @Size(min = 4, max = 50, message = "O tamanho do nome do país deve ser entre {min} e {max}")
     private String pais;
 }
