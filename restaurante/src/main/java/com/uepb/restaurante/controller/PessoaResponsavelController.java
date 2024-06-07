@@ -2,13 +2,14 @@ package com.uepb.restaurante.controller;
 
 import com.uepb.restaurante.models.PessoaResponsavelEntity;
 import com.uepb.restaurante.service.PessoaResponsavelService;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/v1/pessoasResponsaveis")
 public class PessoaResponsavelController {
